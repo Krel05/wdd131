@@ -1,8 +1,8 @@
 :root {
-    --heading-font: "Lucida Console", "Times New Roman";
+    --heading-font: "Google Sans", sans-serif;
     --heading-color: #fff;
-    --background-primary: #0c3eaa;
-    --background-secondary: #54bed1;
+    --background-primary: #0b214e;
+    --background-secondary: #184750;
     --body-font: "Helvetica";
 }
 
