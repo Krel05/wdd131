@@ -29,7 +29,6 @@
     main div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: auto;
     }
 }
 
@@ -66,6 +65,5 @@
     main div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: auto;
     }
 }
