@@ -102,7 +102,7 @@ footer {
         box-shadow: 5px 5px 30px black;
         position: absolute;
         border-bottom: none;
-        padding: 0.5;
+        padding: 1rem;
     }
 
     .data {
