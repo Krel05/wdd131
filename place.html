@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="A webpage to show information about Queretarto, Mexico">
+    <meta name="author" content="Jorge Gabriel Mena Santes">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Queretaro, México</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/queretaro-smaller.webp">
+                <img src="images/queretaro-wider.webp" alt="Queretaro City image" width="1000" height="800">
+            </picture>
+        </div>
+        <div class="sections">
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>
+                        <span class="label">Area: </span>
+                        <span class="value">11,699 Km&#178; </span>
+                    </li>
+                    <li>
+                        <span class="label">Population: </span>
+                        <span class="value">2,368,467</span>
+                    </li>
+                    <li>
+                        <span class="label">Capital: </span>
+                        <span class="value">Santiago de Queretaro</span>
+                    </li>
+                    <li>
+                        <span class="label">Languages: </span>
+                        <span class="value">Spanish</span>
+                    </li>
+                    <li>
+                        <span class="label">Currency: </span>
+                        <span class="value">$ MXN</span>
+                    </li>
+                    <li>
+                        <span class="label">Time Zone: </span>
+                        <span class="value">UTC-6</span>
+                    </li>
+                    <li>
+                        <span class="label">Calling Code: </span>
+                        <span class="value">442</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon" width="100">
+                <ul>
+                    <li>
+                        <span class="label">Temperature: </span>
+                        <span class="value">8 °C</span>
+                    </li>
+                    <li>
+                        <span class="label">Conditions: </span>
+                        <span class="value">Cloudy</span>
+                    </li>
+                    <li>
+                        <span class="label">Wind: </span>
+                        <span class="value">8 Km/h</span>
+                    </li>
+                    <li>
+                        <span class="label">Wind Chill: </span>
+                        <span class="value" id="windChill">442</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Jorge Gabriel Mena Santes | Queretaro</p>
+        <p>Last Modification: <span id="lastModification"></span></p>
+    </footer>
+</body>
+
+</html>
