@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #5a5624;
+    --secondary-color: #fff788;
+    --font-family: "Comic Relief", system-ui;
+    --font-bold: 700;
+    --font-color-primary: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    font-family: var(--font-family);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--font-color-primary);
+}
+
+header span {
+    font-weight: var(--font-bold);
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    grid-column: span 2;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--font-color-primary);
+    text-align: right;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav li {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    display: none;
+    text-decoration: none;
+    color: var(--font-color-primary);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color-primary);
+    text-align: center;
+    padding: 1rem;
+}
+
+#temples {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.temple {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #d8d7d7;
+}
+
+.temple p {
+    padding: 1rem;
+}
+
+.temple b {
+    color: #36014e;
+}
+
+.temple img {
+    padding: 0.5rem;
+    box-shadow: 1px 1px 20px 5px #000;
+    max-width: 100%;
+}

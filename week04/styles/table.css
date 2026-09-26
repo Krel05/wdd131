@@ -1,0 +1,50 @@
+table {
+    margin: 10px auto;
+    border: 1px solid white;
+    box-shadow: 0 0 10px gray;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 600px;
+}
+
+caption {
+    padding: 8px;
+    caption-side: bottom;
+    font-size: smaller
+}
+
+th,
+td {
+    padding: 0.5em 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+th {
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-top: 1px solid black;
+    font-size: larger;
+}
+
+tbody td {
+    background-color: white;
+    color: black;
+}
+
+#Basic,
+#Premium,
+#Deluxe {
+    background-color: gray;
+}
+
+td {
+    font-weight: bold;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}

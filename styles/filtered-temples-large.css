@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #5a5624;
+    --secondary-color: #fff788;
+    --font-family: "Comic Relief", system-ui;
+    --font-bold: 700;
+    --font-color-primary: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@media screen and (min-width: 601px) {
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        justify-items: center;
+    }
+
+    .temple {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        margin: 1rem;
+        width: 450px;
+        border-radius: 5px;
+        border: 1px solid #d8d7d7;
+    }
+
+    .temple p {
+        padding: 1rem;
+    }
+
+    .temple b {
+        color: #36014e;
+    }
+
+    .temple img {
+        padding: 0.5rem;
+        box-shadow: 1px 1px 20px 5px #000;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 901px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1200px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        justify-items: center;
+    }
+
+    .temple {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        margin: 1rem;
+        width: 450px;
+        border-radius: 5px;
+        border: 1px solid #d8d7d7;
+    }
+
+    .temple p {
+        padding: 1rem;
+    }
+
+    .temple b {
+        color: #36014e;
+    }
+
+    .temple img {
+        padding: 0.5rem;
+        box-shadow: 1px 1px 20px 5px #000;
+        max-width: 100%;
+    }
+
+}
