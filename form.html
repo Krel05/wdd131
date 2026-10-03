@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review form</title>
     <meta name="author" content="Jorge Gabriel Mena Santes">
-    <meta name="description" content="A webpage to apply good form design principles">
+    <meta name="description"
+        content="A webpage to apply good form design principles. The purpose is to give a review of different products.">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -19,7 +20,7 @@
     <main>
         <form method="get" action="review.html">
             <fieldset class="productName">
-                <label>Product Name <select>
+                <label>Product Name <select id="slections" name="products" required>
                         <option value="" disabled selected>Select a Product...</option>
                         <div id="products">
                         </div>
@@ -30,13 +31,13 @@
 
                 <div>Overall Rating</div>
                 <div class="rating">
-                    <label>&star;<input type="radio" id="one-star" name="rating" value="" required></label>
-                    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="" required></label>
-                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value=""
+                    <label>&star;<input type="radio" id="one-star" name="rating" value="one" required></label>
+                    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="two" required></label>
+                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value="three"
                             required></label>
-                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value=""
+                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value="four"
                             required></label>
-                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value=""
+                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value="five"
                             required></label>
                 </div>
             </fieldset>
