@@ -19,7 +19,10 @@
     <main>
         <form method="get" action="review.html">
             <fieldset class="productName">
-                <label>Product Name <select id="products">
+                <label>Product Name <select>
+                        <option value="" disabled selected>Select a Product...</option>
+                        <div id="products">
+                        </div>
                     </select></label>
             </fieldset>
 
@@ -27,11 +30,13 @@
 
                 <div>Overall Rating</div>
                 <div class="rating">
-                    <label>&star;<input type="radio" id="one-star" name="rating" required></label>
-                    <label>&star;&star;<input type="radio" id="two-star" name="rating" required></label>
-                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" required></label>
-                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" required></label>
-                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating"
+                    <label>&star;<input type="radio" id="one-star" name="rating" value="" required></label>
+                    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="" required></label>
+                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value=""
+                            required></label>
+                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value=""
+                            required></label>
+                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value=""
                             required></label>
                 </div>
             </fieldset>

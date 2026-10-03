@@ -29,7 +29,7 @@ const products = [
 
 function Options(products) {
     const select = document.querySelector("#products");
-    let content = `<option value="" disabled selected>Select a Product...</option>`;
+    let content = ``;
     for (const product of products) {
         let newOption = `<option value="${product.id}">${product.name}</option>`
         content += newOption;
