@@ -128,3 +128,12 @@ footer {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+    }
+}
