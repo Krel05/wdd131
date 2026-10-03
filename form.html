@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review form</title>
+    <meta name="author" content="Jorge Gabriel Mena Santes">
+    <meta name="description" content="A webpage to apply good form design principles">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Review Form</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <fieldset class="productName">
+                <label>Product Name <select id="products">
+                    </select></label>
+            </fieldset>
+
+            <fieldset class="overallRating">
+
+                <div>Overall Rating</div>
+                <div class="rating">
+                    <label>&star;<input type="radio" id="one-star" name="rating" required></label>
+                    <label>&star;&star;<input type="radio" id="two-star" name="rating" required></label>
+                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" required></label>
+                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" required></label>
+                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating"
+                            required></label>
+                </div>
+            </fieldset>
+
+            <fieldset class="date">
+                <label>Date of Installation <input type="date" id="installation" name="installationDate"
+                        required></label>
+            </fieldset>
+            <fieldset class="features">
+                <div>Which features did you find useful in the product? (Check all that apply)</div>
+                <labeL><input type="checkbox" id="durability" name="durability" value="yes"> Durability</labeL>
+                <labeL><input type="checkbox" id="ease" name="easeUse" value="yes"> Ease of Use</labeL>
+                <labeL><input type="checkbox" id="performance" name="performance" value="yes"> Performance</labeL>
+                <labeL><input type="checkbox" id="design" name="design" value="yes"> Design</labeL>
+            </fieldset>
+
+            <fieldset class="writtenReview">
+                <label>Written Review <textarea id="writtenReview" name="writtenReview"></textarea></label>
+            </fieldset>
+
+            <fieldset class="userName">
+                <label>User Name <input type="text" id="userName" name="userName"></label>
+
+                <input type="submit" value="Send Review" class="button">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Jorge Gabriel Mena Santes | Mexico</p>
+        <p>Last modification: <span id="lm"></span></p>
+    </footer>
+
+</body>
+
+</html>
