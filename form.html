@@ -33,34 +33,38 @@
                 <div class="rating">
                     <label for="one-star">&star;<input type="radio" id="one-star" name="rating" value="one"
                             required></label>
-                    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="two" required></label>
-                    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value="three"
+                    <label for="two-star">&star;&star;<input type="radio" id="two-star" name="rating" value="two"
                             required></label>
-                    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value="four"
-                            required></label>
-                    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value="five"
-                            required></label>
+                    <label for="three-star">&star;&star;&star;<input type="radio" id="three-star" name="rating"
+                            value="three" required></label>
+                    <label for="four-star">&star;&star;&star;&star;<input type="radio" id="four-star" name="rating"
+                            value="four" required></label>
+                    <label for="five-star">&star;&star;&star;&star;&star;<input type="radio" id="five-star"
+                            name="rating" value="five" required></label>
                 </div>
             </fieldset>
 
             <fieldset class="date">
-                <label>Date of Installation <input type="date" id="installation" name="installationDate"
-                        required></label>
+                <label for="installation">Date of Installation <input type="date" id="installation"
+                        name="installationDate" required></label>
             </fieldset>
             <fieldset class="features">
                 <div>Which features did you find useful in the product? (Check all that apply)</div>
-                <labeL><input type="checkbox" id="durability" name="durability" value="yes"> Durability</labeL>
-                <labeL><input type="checkbox" id="ease" name="easeUse" value="yes"> Ease of Use</labeL>
-                <labeL><input type="checkbox" id="performance" name="performance" value="yes"> Performance</labeL>
-                <labeL><input type="checkbox" id="design" name="design" value="yes"> Design</labeL>
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">
+                    Durability</label>
+                <label for="ease"><input type="checkbox" id="ease" name="easeUse" value="yes"> Ease of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">
+                    Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
             </fieldset>
 
             <fieldset class="writtenReview">
-                <label>Written Review <textarea id="writtenReview" name="writtenReview"></textarea></label>
+                <label for="writtenReview">Written Review <textarea id="writtenReview"
+                        name="writtenReview"></textarea></label>
             </fieldset>
 
             <fieldset class="userName">
-                <label>User Name <input type="text" id="userName" name="userName"></label>
+                <label for="userName">User Name <input type="text" id="userName" name="userName"></label>
 
                 <input type="submit" value="Send Review" class="button">
             </fieldset>
