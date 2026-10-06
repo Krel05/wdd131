@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #a15105;
+    --secondary-color: #c0b9b3;
+    --font: #f0f5f4;
+    --font-family: "Comic Relief", system-ui;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.primary {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--font);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.font-color {
+    background-color: var(--primary-color);
+    color: var(--font);
+    padding: 1rem;
+}
+
+.font {
+    margin: 0.5rem;
+}
