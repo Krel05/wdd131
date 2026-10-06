@@ -5,7 +5,7 @@
     --font-family: "Comic Relief", system-ui;
 }
 
-body {
+main {
     font-family: var(--font-family);
 }
 
